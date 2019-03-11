@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  max-width: 1900px;
+  box-sizing: border-box;
+}
+.main-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.header-container {
+  width: 100%;
+  height: 80px;
+  background-color: #247291;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+  border: 1px black solid;
+}
+.header-container .btn {
+  color: #247291;
+  background: #F7D95B;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+}
+.header-container .buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 45%;
+}
+.header-container .btn:hover {
+  background: white;
+}
+.header-container .signUp-btn {
+  animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) 3 both;
+}
+@keyframes shake-bottom {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+}
+.header-container .links {
+  justify-content: center;
+  width: 45%;
+}
+@media (max-width:660px) {
+  .header-container .links {
+    display: none;
+  }
+}
+.header-container a {
+  text-decoration: none;
+  color: #F7D95B;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+.header-container .fa-bars {
+  display: none;
+  font-size: 2rem;
+  color: black;
+}
+.footer-container {
+  width: 100%;
+  height: 160px;
+  background-color: #247291;
+}
+.main-background-img {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+@media (max-width:700px) {
+  .main-content {
+    width: 90%;
+    margin: 2%;
+  }
+}
+.logo-large {
+  position: absolute;
+  height: auto;
+  width: 50%;
+  z-index: 1;
+  bottom: 270px;
+  margin: auto;
+  top: 1px;
+  left: 0;
+  right: 0;
+  animation: rotate-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes rotate-in-center {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+.mission {
+  margin: 20px 0;
+  text-align: center;
+}
+.top-cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:700px) {
+  .top-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+  }
+}
+.card {
+  border: 1px solid black;
+  width: 24.5%;
+  height: 500px;
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+@media (max-width:700px) {
+  .card {
+    width: 100%;
+  }
+}
+.tour-card:hover {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.guide-card {
+  display: none;
+}
+.big-card {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 400px;
+  margin: 2% 10%;
+}
+.big-card h2 {
+  text-align: center;
+}
+.page-break {
+  background: #247291;
+  margin: 20px 0;
+  width: 100%;
+  height: 20px;
+}
+i {
+  color: #247291;
+  margin: 20px 0;
+  font-size: 100px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+li {
+  margin: 20px;
+  font-size: 1.5rem;
+  padding: 0 2%;
+}
+ul {
+  margin: 10px;
+}
+p {
+  font-size: 1.5rem;
+}
+section {
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 1.7rem;
+}
+.button {
+  color: #247291;
+  background: #F7D95B;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  border: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+.bottom-sign-up {
+  display: flex;
+  justify-content: center;
+}
+.hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.fa-location-arrow {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.main-content-about {
+  margin-top: 80px;
+}
+.main-content-about .name-card {
+  border: 1px solid black;
+  width: 24.5%;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.main-content-about .name-card h2 {
+  margin-top: 10px;
+}
+.main-content-about .top-one {
+  display: flex;
+  justify-content: center;
+}
+.main-content-about .bottom-two {
+  display: flex;
+  justify-content: center;
+}
