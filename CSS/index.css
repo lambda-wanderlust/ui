@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -217,6 +213,12 @@ body {
   position: relative;
   text-align: center;
 }
+@media (max-width:700px) {
+  .main-content {
+    width: 90%;
+    margin: 2%;
+  }
+}
 .logo-large {
   position: absolute;
   height: auto;
@@ -249,6 +251,14 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (max-width:700px) {
+  .top-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+  }
+}
 .card {
   border: 1px solid black;
   width: 24.5%;
@@ -260,6 +270,19 @@ body {
   flex-direction: column;
   align-content: flex-end;
 }
+@media (max-width:700px) {
+  .card {
+    width: 100%;
+  }
+}
+.tour-card:hover {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
 .guide-card {
   display: none;
 }
@@ -269,6 +292,9 @@ body {
   border: 1px solid black;
   height: 400px;
   margin: 2% 10%;
+}
+.big-card h2 {
+  text-align: center;
 }
 .page-break {
   background: #247291;
@@ -281,6 +307,7 @@ i {
   margin: 20px 0;
   font-size: 100px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  list-style-position: inside;
 }
 .middle-card {
   display: flex;
@@ -293,6 +320,11 @@ i {
   justify-content: center;
 }
 li {
+  margin: 20px;
+  font-size: 1.5rem;
+  padding: 0 2%;
+}
+ul {
   margin: 10px;
 }
 p {
@@ -322,4 +354,32 @@ h2 {
 }
 .hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.fa-location-arrow {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.main-content-about {
+  margin-top: 80px;
+}
+.main-content-about .name-card {
+  border: 1px solid black;
+  width: 24.5%;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.main-content-about .name-card h2 {
+  margin-top: 10px;
+}
+.main-content-about .top-one {
+  display: flex;
+  justify-content: center;
+}
+.main-content-about .bottom-two {
+  display: flex;
+  justify-content: center;
 }
