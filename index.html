@@ -3,18 +3,23 @@
     <head>
         <title>Wunderlust</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
         <link rel="stylesheet" href="./css/index.css"></link>
+        <script src="header.js"></script>
         <meta>
     </head>
     <header>
             
         <div class="header-container ">
-            <img src="#" class="logo header-logo" />
-            <a href="#">Tour Guide</a>
-            <a href="#">Tourist</a>
-            <a href="#">Other</a>
-            <button class="signUp-btn">SIGN UP</button>
-            <button class="signIn-btn">SIGN IN</button>
+            <div class="links">
+                <a href="#">Tour Guide</a>
+                <a href="#">Tourist</a>
+            </div>
+            <div class="buttons">
+                <button class="btn signUp-btn">SIGN UP</button>
+                <button class="btn signIn-btn">SIGN IN</button>
+            </div>
         </div>
     </header>
     <body>
@@ -22,22 +27,48 @@
         <img src="Assets\images\header_large.jpeg" class= "main-background-img"/>
         <img src="Assets\images\logo_transparent.png" class="logo logo-large"/>
         <div class="main-content">
+            <div class="mission">
+                <p>"Traversing the world and bringing together tourists and experienced guides with preset/planned experiences that can be previewed."</p>
+            </div>
+
             <div class="top-cards">
 
-                <div class="card tour-card" data-card="tourist"></div>
-                <div class="card tour-card" data-card="tourist"></div>
-                <div class="card tour-card" data-card="tourist"></div>
-                <div class="card guide-card" data-card="guide"></div>
-                <div class="card guide-card" data-card="guide"></div>
-                <div class="card guide-card" data-card="guide"></div>
+                <div class="card tour-card" data-card="tourist">
+                    <h2>Create</h2>
+                    <i class='fas fa-map-marked-alt'></i>
+                    <section>With Wunderlust, guides have the ability to create and edit experiences, allowing tourists to find a tour that matches their needs.</section>
+                </div>
+                <div class="card middle-card tour-card" data-card="tourist">
+                    <h2>Upload</h2>
+                    <i class='fas fa-camera'></i>
+                    <section>Wunderlust allows guides to upload images of their experinces, allowing would be tourists to get a preview into the tour.</section>
+                </div>
+                <div class="card tour-card" data-card="tourist">
+                    <h2>Get Paid</h2>
+                    <i class='far fa-credit-card'></i>
+                    <section>Display some tect content here</section>
+                </div>
+                <div class="card guide-card hover" data-card="guide"></div>
+                <div class="card guide-card hover" data-card="guide"></div>
+                <div class="card guide-card hover" data-card="guide"></div>
                 
             </div>
-            <div class="bottom-cards">
-                <div class="big-card"></div>
+            <div class="bottom-card">
+                <div class="big-card">
+                    <ol>
+                        <li>Bullet one</li>
+                        <li>Bullet two</li>
+                        <li>Bullet three</li>
+                        <li>Bullet four</li>
+                        <li>Bullet five</li>
+                    </ol>
+                </div>
             </div>
         </div>
         <div class="page-break"></div>
-        
+        <div class="bottom-sign-up">
+        <button class=" button bottom-signUp-btn">SIGN UP</button>
+        </div>
     </body>
     <footer>
         <div class="footer-container">

@@ -1,22 +1,86 @@
 .header-container{
-width: 100%;
-height: 80px;
-background-color: @wanderlust-color-primary;
-position: fixed;
-top: 0;
-z-index: 2;
+    width: 100%;
+    height: 80px;
+    background-color: @wanderlust-color-primary;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 
+
+    .btn{
+
+        color: @wanderlust-color-primary;
+        background:@wanderlust-color-secondary;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: none;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        margin: 0 10px;
+        align-self: flex-end;
+    }
+
+    .btn:hover{
+        background:white;
+        
+        
+    }
+
+    .signUp-btn{
+        animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3 both;  
+    }
+
+    @keyframes shake-bottom {
+        0%,
+        100% {
+          transform: rotate(0deg);
+          transform-origin: 50% 100%;
+        }
+        10% {
+          transform: rotate(2deg);
+        }
+        20%,
+        40%,
+        60% {
+          transform: rotate(-4deg);
+        }
+        30%,
+        50%,
+        70% {
+          transform: rotate(4deg);
+        }
+        80% {
+          transform: rotate(-2deg);
+        }
+        90% {
+          transform: rotate(2deg);
+        }
+      }
+    
+    .links{
+       
+        justify-self: center;
+       
+    }
+
+    a{
+        text-decoration: none;
+        color: @wanderlust-color-secondary;
+        text-transform: uppercase;
+        margin: 0 40px;
+    }
 }
 
 
 
 
-
-.floatingNav {
-    width: calc(100vh - 100px); 
-    border-radius: 2px;
-    box-shadow: 0px 1px 10px #999;
-  }
 
   
   
