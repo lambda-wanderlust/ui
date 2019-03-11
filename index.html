@@ -9,12 +9,13 @@
         <script src="header.js"></script>
         <meta>
     </head>
-    <header>
+    <header class="header">
             
         <div class="header-container ">
+                <i class="fas fa-bars"></i>
             <div class="links">
-                <a href="#">Tour Guide</a>
-                <a href="#">Tourist</a>
+                <a href="#main-content">Tour Guide</a>
+                <a href="#main-content">Tourist</a>
             </div>
             <div class="buttons">
                 <button class="btn signUp-btn">SIGN UP</button>
@@ -23,15 +24,15 @@
         </div>
     </header>
     <body>
-        
-        <img src="Assets\images\header_large.jpeg" class= "main-background-img"/>
         <img src="Assets\images\logo_transparent.png" class="logo logo-large"/>
-        <div class="main-content">
-            <div class="mission">
+        <img src="Assets\images\header_large.jpeg" class= "main-background-img"/>
+        
+        <div class="main-content" id ="main-content">
+            <div class="mission" id="mission">
                 <p>"Traversing the world and bringing together tourists and experienced guides with preset/planned experiences that can be previewed."</p>
             </div>
 
-            <div class="top-cards">
+            <div class="top-cards" id="top-cards">
 
                 <div class="card tour-card" data-card="tourist">
                     <h2>Create</h2>
@@ -46,7 +47,7 @@
                 <div class="card tour-card" data-card="tourist">
                     <h2>Get Paid</h2>
                     <i class='far fa-credit-card'></i>
-                    <section>Display some tect content here</section>
+                    <section>Easily collect reservations and payment from customers with the mobile pay option from Wanderlust</section>
                 </div>
                 <div class="card guide-card hover" data-card="guide"></div>
                 <div class="card guide-card hover" data-card="guide"></div>
@@ -57,10 +58,10 @@
                 <div class="big-card">
                     <h2>Why Use Wanderlust?</h2>
                     <ul class="fa-ul">
-                            <li><span class="fa-li" ><i class="fas fa-location-arrow"></i></span>List icons can</li>
-                            <li><span class="fa-li"><i class="fas fa-location-arrow"></i></span>be used to</li>
-                            <li><span class="fa-li"><i class="fas fa-location-arrow"></i></span>replace bullets</li>
-                            <li><span class="fa-li"><i class="fas fa-location-arrow"></i></span>in lists</li>
+                            <li><span class="fa-li" ><i class="fas fa-location-arrow"></i></span>Find local tours, wherever you may be.</li>
+                            <li><span class="fa-li"><i class="fas fa-location-arrow"></i></span>Reserve your spot and pay easily online.</li>
+                            <li><span class="fa-li"><i class="fas fa-location-arrow"></i></span>No more brochoures, simply log in and see what is happening near you.</li>
+                            <li><span class="fa-li"><i class="fas fa-location-arrow"></i></span>Read reviews on each tour guide to hear from former customers, the experience you will recieve.</li>
                     </ul>
             </div>
         </div>
