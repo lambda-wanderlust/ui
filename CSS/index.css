@@ -379,6 +379,9 @@ i {
   font-size: 60px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
+.bottom-card h2 {
+  text-decoration: underline;
+}
 .big-card {
   display: flex;
   flex-direction: column;
@@ -437,12 +440,12 @@ i {
   margin-top: 80px;
 }
 .main-content-about .name-card {
-  border: 1px solid black;
   width: 24.5%;
-  height: 400px;
+  height: auto;
   margin: 20px;
   text-align: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 .main-content-about .name-card h2 {
@@ -451,8 +454,26 @@ i {
 .main-content-about .top-one {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .main-content-about .bottom-two {
   display: flex;
   justify-content: center;
+}
+.team-img {
+  border-radius: 200px;
+  height: 250px;
+  width: 250px;
+  margin: 2%;
+  animation: roll-in-left 1s ease-out both;
+}
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
 }
