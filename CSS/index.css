@@ -255,8 +255,7 @@ h2 {
 }
 @media (max-width:800px) {
   .main-content {
-    width: 90%;
-    margin: 2%;
+    width: 100%;
   }
 }
 .hero-image {
@@ -326,7 +325,7 @@ h2 {
   .top-cards {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     align-content: center;
   }
 }
@@ -371,7 +370,6 @@ h2 {
 }
 .page-break {
   background: #247291;
-  margin: 20px 0;
   width: 100%;
   height: 0.3rem;
 }
@@ -399,8 +397,12 @@ i {
   margin: 1.5rem;
 }
 .bottom-sign-up {
+  margin-top: 3%;
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
