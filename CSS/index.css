@@ -329,6 +329,21 @@ h2 {
     align-content: center;
   }
 }
+.tour-cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+@media (max-width:800px) {
+  .tour-cards {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-content: center;
+  }
+}
 .card {
   border-radius: 5px;
   width: 24.5%;
@@ -347,11 +362,11 @@ h2 {
     height: 300px;
   }
 }
-.tour-card:hover i {
+.guide-card:hover i {
   color: #F7D95B;
 }
-.guide-card {
-  display: none;
+.tour-card:hover i {
+  color: #F7D95B;
 }
 .big-card {
   display: flex;

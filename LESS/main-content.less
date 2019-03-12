@@ -19,6 +19,7 @@ font-size: 1.5rem;
 }
 
 
+
 .main-content{
 @media @tablet{
 width: 100%;
@@ -118,6 +119,25 @@ align-content: center;
 }  
 }
 
+.tour-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+    @media @tablet{
+    
+    display: flex;
+    flex-direction:column;
+    width: 90%;
+    
+    align-content: center;
+    
+    
+    }  
+    display: none;
+    }
+
 .card{
 
 .smallCards();
@@ -128,19 +148,27 @@ margin-top: 5px 20px;
 height: 300px;
 } 
 
+
+
 }
+.guide-card:hover{
+
+    i{
+        color: @wanderlust-color-secondary;
+    }
+    
+    }
 .tour-card:hover{
 
-i{
-    color: @wanderlust-color-secondary;
-}
+        i{
+            color: @wanderlust-color-secondary;
+        }
+        
+        }
 
-}
 
 
-.guide-card{
-display:none;
-}
+
 
 .big-card{
 display: flex;
