@@ -332,8 +332,8 @@ h2 {
 .card {
   border-radius: 5px;
   width: 24.5%;
-  height: 350px;
-  margin: 20px;
+  height: auto;
+  margin: 5%;
   justify-content: center;
   text-align: center;
   display: flex;
@@ -436,6 +436,13 @@ i {
     opacity: 1;
   }
 }
+.upper-content {
+  text-align: center;
+  margin: 5%;
+}
+.upper-content h1 {
+  font-size: 3rem;
+}
 .main-content-about {
   margin-top: 80px;
 }
@@ -466,7 +473,10 @@ i {
   border-radius: 200px;
   height: 250px;
   width: 250px;
-  margin: 2%;
+  margin: 5%;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
   animation: roll-in-left 1s ease-out both;
 }
 @keyframes roll-in-left {
@@ -482,4 +492,11 @@ i {
 .fa-github {
   color: #247291;
   font-size: 1.5rem;
+}
+.fa-bars {
+  margin-left: 5%;
+  font-size: 2rem;
+}
+.info {
+  display: none;
 }
