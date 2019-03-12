@@ -8,14 +8,14 @@ margin: 10px;
 }
 
 p{
-font-size: 1.5rem;
+font-size: 1.2rem;
 }
 section{
 font-size: 1.2rem;
 }
 
 h2{
-font-size: 1.7rem;
+font-size: 1.5rem;
 }
 
 
@@ -71,9 +71,34 @@ opacity: 1;
 
 
 .mission{
-margin: 20px 5px;
+margin: 5% 5%;
 text-align: center;
 }
+
+.intro-section{
+margin: 5% 5%;
+text-align: center;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    img{
+        border-radius: 200px;
+        height: 250px;
+        width: 250px;
+        margin: 2%;
+    }
+
+    @media @tablet{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+}
+
 
 
 .top-cards{
@@ -105,7 +130,9 @@ height: 300px;
 }
 .tour-card:hover{
 
-.cardHover();
+i{
+    color: @wanderlust-color-secondary;
+}
 
 }
 
@@ -203,3 +230,5 @@ transform: translateZ(0) translateX(0);
 opacity: 1;
 }
 }
+
+
