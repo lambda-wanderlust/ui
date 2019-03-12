@@ -479,3 +479,7 @@ i {
     opacity: 1;
   }
 }
+.fa-github {
+  color: #247291;
+  font-size: 1.5rem;
+}
