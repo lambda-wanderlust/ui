@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <script
+            src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
         <title>Wanderlust</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
         <link rel="stylesheet" href="./css/index.css"></link>
-        <script src="header.js"></script>
-        <meta>
+        <script src ="jquery.js"></script> 
+            
     </head>
     <header class="header">
             
@@ -35,7 +39,7 @@
             <div class="mission" id="mission">
                 <p>"Traversing the world and bringing together tourists and experienced guides with preset/planned experiences that can be previewed."</p>
             </div>
-
+            <div id = "divToShowHide" class = "BeforeScroll">
             <div class="top-cards" id="top-cards">
 
                 <div class="card tour-card" data-card="tourist">
@@ -58,6 +62,7 @@
                 <div class="card guide-card hover" data-card="guide"></div>
                 
             </div>
+        </div>
             <div class="bottom-card">
                 <div class="big-card">
                     <h2>Why Use Wanderlust?</h2>
@@ -73,6 +78,7 @@
         <div class="bottom-sign-up">
         <button class=" button bottom-signUp-btn">SIGN UP</button>
         </div>
+        
     </body>
     <footer>
         <div class="footer-container">

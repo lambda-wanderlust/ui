@@ -10,8 +10,6 @@
     display: flex;
     justify-content: center;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    
-    
 
 
     .btn{
@@ -25,6 +23,15 @@
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         margin: 0 10px;
+
+        @media @mobile{
+          padding: .2rem .7rem;
+          margin: .7rem;
+          font-size: 75%;
+
+          
+        
+        }
         
     }
 
@@ -32,6 +39,11 @@
         display: flex;
         justify-content: flex-end;
         width: 45%;
+
+        @media @mobile{
+          width: 50%;
+        
+        }
     }
 
     .btn:hover{
