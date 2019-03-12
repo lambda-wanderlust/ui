@@ -447,6 +447,7 @@ i {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 .main-content-about .name-card h2 {
   margin-top: 10px;
@@ -455,6 +456,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 .main-content-about .bottom-two {
   display: flex;
