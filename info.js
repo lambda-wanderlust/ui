@@ -6,8 +6,11 @@ class Info {
     this.information = this.info.querySelector('.info');
     
     //this.expandButton.addEventListener('click', this.expandArticle.bind(this));
-
+    this.teamImg.addEventListener('mousenter', () => this.hover());
     this.teamImg.addEventListener('click', () => this.expandInfo());
+    
+      
+    
     
     
   }
@@ -16,6 +19,11 @@ class Info {
     console.log ('its working');
     this.information.classList.toggle('info-open');
     
+  }
+
+  hover(){
+    console.log ('i am hovering')
+    this.teamImg.class.style = ".7"
   }
 
 };
