@@ -646,7 +646,7 @@ i {
   display: none;
   position: absolute;
   top: 5px;
-  width: 20%;
+  width: auto;
   height: auto;
   background-color: white;
   border-right: 1px solid #F7D95B;
