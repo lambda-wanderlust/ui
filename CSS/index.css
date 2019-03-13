@@ -525,6 +525,10 @@ i {
   font-size: 1.5rem;
 }
 .info {
+  margin-top: 1rem;
+  display: block;
+}
+.info-open {
   display: none;
 }
 .page-break-about {
