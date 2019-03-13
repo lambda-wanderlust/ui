@@ -235,6 +235,22 @@ body {
   margin-top: 50px;
   margin-bottom: 10px;
   background-color: #247291;
+  color: #F7D95B;
+}
+.footer-container ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.footer-container li {
+  font-size: 0.7rem;
+  width: auto;
+}
+.footer-container p {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1rem;
 }
 li {
   margin: 20px;
@@ -529,7 +545,18 @@ i {
   display: block;
 }
 .info-open {
-  display: none;
+  visibility: hidden;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 .page-break-about {
   background: #247291;

@@ -81,13 +81,30 @@ animation: roll-in-left 1s ease-out both;
     font-size: 1.5rem;
 }
 .info{
+    
     margin-top: 1rem;
     display: block;
-}
-.info-open{
-    display: none;
     
 }
+.info-open{
+   
+        visibility: hidden;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; 
+
+}
+
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
 .page-break-about{
     background: @wanderlust-color-primary;
     width: 100%;
