@@ -8,11 +8,6 @@ class Info {
     //this.expandButton.addEventListener('click', this.expandArticle.bind(this));
     this.teamImg.addEventListener('mousenter', () => this.hover());
     this.teamImg.addEventListener('click', () => this.expandInfo());
-    
-      
-    
-    
-    
   }
 
   expandInfo() {
@@ -23,7 +18,7 @@ class Info {
 
   hover(){
     console.log ('i am hovering')
-    this.teamImg.class.style = ".7"
+    this.teamImg.style.opacity = ".7";
   }
 
 };
