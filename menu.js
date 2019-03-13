@@ -1,7 +1,7 @@
 
 const toggleMenu = () => {
     menu.classList.toggle('menu--open');
-    console.log('menu toggle');
+    
       
      };  
     
