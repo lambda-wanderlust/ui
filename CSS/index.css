@@ -484,6 +484,22 @@ i {
   display: flex;
   justify-content: center;
 }
+@media (max-width:800px) {
+  .main-content-about .bottom-two {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width:800px) {
+  .main-content-about .top-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
 .team-img {
   border-radius: 200px;
   height: 250px;
