@@ -5,6 +5,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <title>Wanderlust</title>
+    <link rel="shortcut icon" href="Assets/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
@@ -14,18 +15,33 @@
     <script src="jquery.js"></script>
 
 </head>
-<header class="header">
+ 
 
     <div class="header-container ">
-        <i class="fas fa-bars"></i>
+            <i class="fas fa-bars menu-button"></i>
+            <div class="menu">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+        
+                    <a href="https://wanderlust-lambda.netlify.com/create-user-form" target="_blank">
+                        <li>Sign Up</li>
+                    </a>
+                    <a href="https://wanderlust-lambda.netlify.com/" target="_blank">
+                        <li>Sign In</li>
+                    </a>
+                </ul>
+            </div>
+        
         <div class="links">
-            <a href="#intro-section">Tour Guide</a>
-            <a href="#main-content">Tourist</a>
+            <a class="tour-guide" href="#intro-section">Tour Guide</a>
+            <a class="tourist"href="#main-content">Tourist</a>
         </div>
         <div class="buttons">
-            <button onclick="location.href = 'https://wanderlust-lambda.netlify.com/create-user-form';" class="btn signUp-btn">SIGN
+            <button onclick="location.href = 'https://wanderlust-lambda.netlify.com/create-user-form';" class="btn signUp-btn" target="_blank">SIGN
                 UP</button>
-            <button onclick="location.href = 'https://wanderlust-lambda.netlify.com/';" class="btn signIn-btn">SIGN IN</button>
+            <button onclick="location.href = 'https://wanderlust-lambda.netlify.com/';" class="btn signIn-btn" target="_blank">SIGN IN</button>
         </div>
     </div>
 </header>
@@ -44,9 +60,9 @@
                 experiences that can be previewed."</p>
         </div>
         <div class="images">
-            <img src="Assets\images\pexels-photo-346826.jpeg" />
-            <img src="Assets\images\pexels-photo-551650.jpeg" />
-            <img src="Assets\images\pexels-photo-696219.jpeg" />
+            <img class="steps" src="Assets\images\pexels-photo-346826.jpeg" />
+            <img class="safari" src="Assets\images\pexels-photo-551650.jpeg" />
+            <img class="wine" src="Assets\images\pexels-photo-696219.jpeg" />
         </div>
         <div class="intro-section" id="intro-section">
             <p>Wanderlust is your gateway to quality, exiting tours from around the world. Connecting tour guides with
@@ -70,12 +86,12 @@
                 </div>
                 <div class="card guide-card" data-card="guide">
                     <h2>Get Reservations</h2>
-                    <i class='far fa-readme'></i>
+                    <i class='fas fa-book'></i>
                     <section>Wanderlust allows tourists to book their tour ahead of time, making it easier for guides
                         to plan accordingly.</section>
                 </div>
             </div>
-        </div>
+        
         <div class="tour-cards">
             <div class="card tour-card" data-card="tour">
                 <h2>Search</h2>
@@ -84,17 +100,17 @@
             </div>
             <div class="card tour-card" data-card="tour">
                 <h2>Explore</h2>
-                <i class='far fab fa-readme'></i>
+                <i class='fab fa-readme'></i>
                 <section>Get deatiled information and facts about tours, created by the guides themselves.</section>
             </div>
             <div class="card tour-card" data-card="tour">
                 <h2>Book</h2>
-                <i class='far fas fa-book-reader'></i>
+                <i class='fas fa-file-signature'></i>
                 <section>With Wanderlust, you can quickly and easily book your spot in a tour experience that suits
                     you. Eliminating the need to wait in line.</section>
             </div>
         </div>
-
+    </div>
         <div class="bottom-card">
             <div class="big-card">
                 <h2>Why Use Wanderlust?</h2>
@@ -110,22 +126,23 @@
 
             </div>
         </div>
+   
         <div class="page-break"></div>
         <div class="bottom-sign-up">
             <p>Are you ready to make brochoures a thing of the past?</p>
-            <p>Create your account now to find or create an experience!</p>
-            <button class=" button bottom-signUp-btn">SIGN UP</button>
+            <p>Create your account now to find or create the experience of a lifetime!</p>
+            <button class=" button bottom-signUp-btn" onclick="location.href = 'https://wanderlust-lambda.netlify.com/create-user-form';" target="_blank">SIGN UP</button>
         </div>
-
+<script src="menu.js"></script>
 </body>
 <footer>
     <div class="footer-container">
         <div class="links">
-            <a href="https://wanderlust-lambda.netlify.com/create-user-form">
+            <a href="https://wanderlust-lambda.netlify.com/create-user-form" target="_blank">
                 Sign Up
             </a>
             <p>|</p>
-            <a href="https://wanderlust-lambda.netlify.com/">
+            <a href="https://wanderlust-lambda.netlify.com/" target="_blank">
                 Sign In
             </a>
             <p>|</p>
@@ -136,5 +153,5 @@
 
 
     </div>
-
+</footer>
 </html>

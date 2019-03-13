@@ -5,11 +5,11 @@
 
 .menu {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 75px;
-  left: 0;
-  width: 200px;
+  width: 90%;
   height: auto;
+  
   background-color: white;
   border-right: 1px solid @wanderlust-color-secondary;
   border-bottom: 1px solid @wanderlust-color-secondary;
@@ -35,4 +35,20 @@
 
 .menu--open {
   display: block;
+  animation: slide-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  
+  @media @big{
+    display:none;
+  }
+  
+}
+
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
 }

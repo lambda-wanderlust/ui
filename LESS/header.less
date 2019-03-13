@@ -9,6 +9,8 @@
   display: flex;
   justify-content: center;
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  
+  
 
 
   .btn {
@@ -42,6 +44,10 @@
     @media @mobile {
       width: 40%;
 
+    }
+
+    @media @small{
+      display:none;
     }
   }
 
@@ -93,9 +99,10 @@
     justify-content: center;
     width: 45%;
 
-    @media @mobile {
+    @media @tablet {
       display: none;
     }
+    
 
   }
 
@@ -105,15 +112,24 @@
     text-transform: uppercase;
     padding: 0 15px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-
-
+  }
+  a:hover{
+    text-decoration: underline;
   }
 
   .fa-bars {
     display: none;
-    font-size: 2rem;
-    color: black;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 4rem;
+    color: @wanderlust-color-primary;
 
-
+    @media @small{
+      display: block;
+      margin-right: 5%;
+      text-align: right;
+      
+    }
   }
+
 }
