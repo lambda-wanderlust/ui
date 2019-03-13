@@ -380,10 +380,15 @@ h2 {
 }
 @media (max-width:800px) {
   .tour-cards {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 90%;
     align-content: center;
+  }
+}
+@media (max-width:610px) {
+  .tour-cards {
+    display: none;
   }
 }
 .card {
@@ -466,9 +471,6 @@ i {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-.hover {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 .fa-location-arrow {
   font-size: 1.4rem;
