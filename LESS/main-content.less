@@ -154,14 +154,14 @@ h2 {
     }
 
     @media @mobile{
-        display: flex;
+        
         .card3{
 
         display:none;
         }
     }
 
-    display: none;
+    
 }
 
 .card {
@@ -170,8 +170,8 @@ h2 {
 
     @media @tablet {
         width: 100%;
-        margin-top: 5px 20px;
-        height: 300px;
+        margin-top: 1% 3%;
+        height: 200px;
     }
 
 
@@ -193,6 +193,7 @@ h2 {
     }
 
 }
+
 
 
 
@@ -245,12 +246,10 @@ i {
 .button {
 
     .bigbutton();
-
-    
-
 }
 
 .button:hover{
+
     background-color: white;
 }
 
@@ -263,8 +262,6 @@ i {
     text-align: center;
 }
 
-
-
 .fa-location-arrow {
     font-size: 1.4rem;
     margin: 0;
@@ -273,13 +270,8 @@ i {
 
 
 .BeforeScroll {
-    height: 100px;
-    width: 100%;
-
-
     display: none;
 }
-
 
 .AfterScroll {
     height: auto;
@@ -287,6 +279,7 @@ i {
     animation: slide-in-fwd-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
     display: flex;
+    flex-direction: column;
     @media @tablet {
         flex-direction: column;
     }
@@ -306,3 +299,5 @@ i {
         opacity: 1;
     }
 }
+
+
