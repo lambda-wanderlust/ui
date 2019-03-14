@@ -48,23 +48,49 @@
     margin: 5%;
     box-shadow: 1px 1px 2px 3px rgb(14, 7, 7);
 
-    animation: roll-in-left 1s ease-out both;
+    animation: bounce-in-fwd 1.1s both;
 
 }
 
 
 
-@keyframes roll-in-left {
+@keyframes bounce-in-fwd {
     0% {
-        transform: translateX(-800px) rotate(-540deg);
-        opacity: 0;
+      transform: scale(0);
+      animation-timing-function: ease-in;
+      opacity: 0;
     }
-
+    38% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: scale(0.7);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: scale(0.84);
+      animation-timing-function: ease-in;
+    }
+    89% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: scale(0.95);
+      animation-timing-function: ease-in;
+    }
     100% {
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
+      transform: scale(1);
+      animation-timing-function: ease-out;
     }
-}
+  }
+  
 
 .fa-github {
     color: @wanderlust-color-primary;
