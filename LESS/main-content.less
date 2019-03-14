@@ -119,6 +119,9 @@ h2 {
     justify-content: center;
 
     @media @tablet {
+        .card2{
+            display:none;
+        }
 
         display: flex;
         flex-direction: column;
@@ -137,17 +140,25 @@ h2 {
 
     @media @tablet {
 
-        display: none;
+        display: flex;
         flex-direction: column;
         width: 90%;
 
         align-content: center;
 
+        .card3{
+        display: none;
+        }
+
 
     }
 
     @media @mobile{
+        display: flex;
+        .card3{
+
         display:none;
+        }
     }
 
     display: none;
@@ -276,6 +287,12 @@ i {
     animation: slide-in-fwd-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
     display: flex;
+    @media @tablet {
+        flex-direction: column;
+    }
+    @media @mobile{
+        flex-direction: column;
+    }
 }
 
 @keyframes slide-in-fwd-left {
