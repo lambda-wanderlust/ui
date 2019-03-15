@@ -517,27 +517,35 @@ i {
 }
 .upper-content {
   text-align: center;
-  margin: 5%;
+  margin: 2%;
+  background: #247291;
+  color: white;
+  padding: 3rem;
+  border-radius: 12px;
 }
 .upper-content h1 {
   font-size: 3rem;
 }
+h3 {
+  margin-top: 2rem;
+}
 .main-content-about {
-  margin-top: 80px;
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .main-content-about .name-card {
   width: 24.5%;
   height: auto;
-  margin: 20px;
+  margin: 5%;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .main-content-about .name-card h2 {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 @media (max-width:800px) {
   .main-content-about {
@@ -617,10 +625,11 @@ i {
   background: #247291;
   width: 100%;
   height: 0.3rem;
-  margin-top: 40px;
+  margin-top: 3rem;
 }
 .carousel {
   width: 100%;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -628,7 +637,8 @@ i {
   height: auto;
   position: relative;
   overflow: hidden;
-  margin-top: 16px;
+  margin-top: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 .carousel .left-button,
 .carousel .right-button {
@@ -636,16 +646,12 @@ i {
   justify-content: center;
   align-items: none;
   flex-direction: row;
-  font-size: 40px;
+  font-size: 30px;
   border-radius: 50%;
   position: absolute;
   width: 50px;
   height: 50px;
   cursor: pointer;
-}
-.carousel .left-button:hover,
-.carousel .right-button:hover {
-  color: black;
 }
 .carousel .left-button {
   top: 50%;
@@ -724,14 +730,14 @@ i {
   margin: 0 2%;
   width: auto;
   height: 50vh;
-  background-color: rgba(36, 114, 145, 0.5);
+  background-color: rgba(36, 114, 145, 0.7);
   border-right: 1px solid #F7D95B;
   border-bottom: 1px solid #F7D95B;
   border-left: none;
   border-bottom: none;
   z-index: 2;
-  -webkit-box-shadow: 1.5px 1.5px 2.5px 3px #ccc;
-  -moz-box-shadow: 1.5px 1.5px 2.5px 3px #CCC;
+  -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(236, 230, 230, 0.5);
+  -moz-box-shadow: 1.5px 1.5px 2.5px 3px rgba(236, 230, 230, 0.5);
   box-shadow: 1.5px 1.5px 2.5px 3px rgba(236, 230, 230, 0.5);
 }
 .menu-about a {
@@ -743,6 +749,7 @@ i {
   text-decoration-color: #F7D95B;
 }
 .menu-about ul li {
+  color: #F7D95B;
   list-style-type: none;
   font-size: 1.5rem;
   padding: 30px 0;
