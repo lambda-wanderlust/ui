@@ -10,10 +10,6 @@ body.addEventListener('click',function(event){
 
 
 
-
-
-
-
 const toggleMenuAbout = () => {
     menuAbout.classList.toggle('menu--open-about');
     
