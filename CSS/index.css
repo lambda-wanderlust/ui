@@ -526,6 +526,9 @@ i {
 .upper-content h1 {
   font-size: 3rem;
 }
+h3 {
+  margin-top: 2rem;
+}
 .main-content-about {
   margin-top: 5%;
   display: flex;

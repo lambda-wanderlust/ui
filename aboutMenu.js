@@ -1,11 +1,5 @@
 
-const body = document.querySelector('body');
-body.addEventListener('click',function(event){
 
-    console.log('clicked')
-    menuAbout.classList.remove(toggleMenuAbout);
-    event.stopPropagation();
-});
 
 
 
